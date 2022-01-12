@@ -377,7 +377,12 @@ template {
   position: relative;
   width: 350px;
   height: 40px;
-  margin-left: -100px;
+  margin-left: -180px;
+}
+
+.search input[type~="text"] {
+  font-size: 12px;
+  line-height: 15;
 }
 
 .search__input {
@@ -386,10 +391,8 @@ template {
   border: none;
   border-radius: 6px 0 0 6px;
   background-color: #F5FAFE;
-  padding-right: 10px;
+  padding: 12px 23px;
   outline: none;
-  size: 12px;
-  line-height: 15;
 }
 
 .search__button {
