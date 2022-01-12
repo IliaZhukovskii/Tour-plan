@@ -4,21 +4,24 @@
   align-items: center
   justify-content: space-between
   padding: 40px 0
+  margin-top: 1px
 
 .search
   position: relative
   +size(350px,40px)
-  margin-left: -180px
+  margin-left: -215px
+  margin-top: -2px
 
   input[type~="text"]
     font-size: 12px
     line-height: 15
+    color: $text-color
 
   &__input
     +size(285px,100%)
     +border(none,6px 0 0 6px)
     background-color: #F5FAFE
-    padding: 12px 23px
+    padding: 10px 23px 12px 23px
     outline: none
 
   &__button
@@ -29,17 +32,28 @@
     +border(none,0 6px 6px 0)
     background-color: $button-color
 
+    img
+      margin-top: 3px
+      margin-left: 1px
+
 .user
   display: flex
+  position: relative
+  justify-content: flex-end
   align-items: center
-
+  width: 150px
+  img
+    margin-top: -4px
   &__avatar
+    position: absolute
     +size(40px,40px)
     +border(none,50%)
     object-fit: cover
-
+    right: 67px
   &__name
+    position: absolute
     line-height: 18px
     font-size: 14px
     color: $text-color
     margin-left: 18px
+    right: 0px
