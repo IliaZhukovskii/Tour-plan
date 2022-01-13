@@ -1,0 +1,80 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 1000px
+
+@media (max-width: 1050px)
+  .container
+    max-width: 850px
+
+  .search
+    margin: auto
+
+@media (max-width: 900px)
+  .container
+    max-width: 750px
+  .header-top
+    padding: 30px 0
+    &__logo
+      width: 132px
+
+@media (max-width: 768px)
+  .container
+    max-width: 700px
+  .search
+    +size(340px,40px)
+  .header-menu
+    padding: 22px 0 23px 0
+    &__link
+      font-size: 12px
+      line-height: 15px
+
+@media (max-width: 710px)
+  .container
+    max-width: 600px
+  .header-top
+    padding: 25px 0
+    &__logo
+      width: 99px
+  .search
+    +size(250px,40px)
+
+@media (max-width: 650px)
+  .container
+    max-width: 550px
+  .header-top
+    padding: 25px 0
+    &__logo
+      width: 99px
+  .search
+    +size(200px,30px)
+  .header-menu__link
+    font-size: 10px
+    line-height: 12px
+
+@media (min-width: 320px) and (max-width:560px)
+  .container
+    max-width: 278px
+  .header
+    &__logo
+      width: 99px
+    &-top
+      padding: 28px 0
+      &__btn
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        +size(16px,11px)
+        border: none
+        cursor: pointer
+  button
+    display: none
+  .line
+    +size(16px,1px)
+    background-color: $text-color
+
+  .search,.user
+    display: none
+
+  .header-menu__wrap
+    flex-direction: column
