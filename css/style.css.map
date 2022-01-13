@@ -7,7 +7,8 @@
         "../sass/_settings.sass",
         "../sass/_normalize.scss",
         "../sass/_mixins.sass",
-        "../sass/section/_header.sass"
+        "../sass/section/_header.sass",
+        "../sass/_media.sass"
     ],
     "names": [],
     "file": "style.css"
