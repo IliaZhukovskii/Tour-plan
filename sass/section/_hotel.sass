@@ -1,0 +1,61 @@
+.hotel
+  padding-top: 16px
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-info
+    &__stars
+      margin-bottom: 1px
+      margin-left: 1px
+      flex-basis: 100%
+    &__wrap
+      display: flex
+      flex-wrap: wrap
+    &__name
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &-rating
+    color: $white
+    font-style: normal
+    background-color: $button-color
+    display: flex
+    flex-direction: column
+    padding: 9px 6px 4px 7px
+    border-radius: 4px
+    text-align: center
+    margin-top: 4px
+    &__text
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      margin-bottom: 2px
+    &__rating
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+
+.offer
+  font-weight: 600
+  font-size: 10px
+  line-height: 13px
+  color: $white
+  background-color: $button-color
+  padding: 3px 9px 4px 9px
+  border-radius: 3px
+  margin-left: 15px
+  margin-top: 6px
+  +size(70px,20px)
+
+.star
+  margin-right: -2px
+  padding: 0
+.span-wrap
+  font-size: 10px

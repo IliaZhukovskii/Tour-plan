@@ -67,6 +67,8 @@
         +size(16px,11px)
         border: none
         cursor: pointer
+    &-menu
+      display: none
   button
     display: none
   .line
@@ -76,5 +78,25 @@
   .search,.user
     display: none
 
-  .header-menu__wrap
-    flex-direction: column
+  .hotel
+    padding-top: 0
+    &__wrap
+    &-info
+      &__wrap
+        width: 100%
+        position: relative
+      &__stars
+        position: absolute
+        flex-basis: 20%
+        align-self: flex-end
+        right: 0
+        top: 5px
+      &__name
+        margin-top: 10px
+      &__description
+    &-rating
+      display: none
+
+  .offer
+    order: -3
+    margin-left: 0px
