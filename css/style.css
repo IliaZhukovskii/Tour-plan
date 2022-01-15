@@ -629,28 +629,10 @@ template {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .container {
-    max-width: 850px;
+    max-width: 92%;
   }
   .search {
-    margin: auto;
-  }
-}
-
-@media (max-width: 900px) {
-  .container {
-    max-width: 750px;
-  }
-  .header-top {
-    padding: 30px 0;
-  }
-  .header-top__logo {
-    width: 132px;
+    margin: 0 auto;
   }
 }
 
@@ -658,58 +640,35 @@ template {
   .container {
     max-width: 700px;
   }
-  .search {
-    width: 340px;
-    height: 40px;
+  .header-top {
+    padding: 30px 0;
   }
   .header-menu {
-    padding: 22px 0 23px 0;
+    padding: 20px 0;
+  }
+  .header-menu__wrap {
+    padding: 0 15px;
   }
   .header-menu__link {
     font-size: 12px;
-    line-height: 15px;
   }
-}
-
-@media (max-width: 710px) {
-  .container {
-    max-width: 600px;
-  }
-  .header-top {
-    padding: 25px 0;
-  }
-  .header-top__logo {
-    width: 99px;
+  .header__logo {
+    width: 132px;
   }
   .search {
-    width: 250px;
-    height: 40px;
+    width: 340px;
+    margin-left: 48px;
+    margin-top: 1px;
+  }
+  .user {
+    margin-top: 5px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 550px;
-  }
-  .header-top {
-    padding: 25px 0;
-  }
-  .header-top__logo {
-    width: 99px;
-  }
-  .search {
-    width: 200px;
-    height: 30px;
-  }
-  .header-menu__link {
-    font-size: 10px;
-    line-height: 12px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 560px) {
-  .container {
-    max-width: 278px;
+    max-width: 576px;
+    width: 92%;
   }
   .header__logo {
     width: 99px;
@@ -730,9 +689,11 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 16px;
-    height: 11px;
+    height: 13px;
     border: none;
     cursor: pointer;
+    margin-right: 20px;
+    margin-top: 4px;
   }
   .header-menu {
     display: none;
@@ -748,8 +709,15 @@ template {
   .search, .user {
     display: none;
   }
+  .breadcrumb__wrap {
+    margin-top: 2px;
+    padding-bottom: 17px;
+  }
   .hotel {
     padding-top: 0;
+  }
+  .hotel-info {
+    width: 100%;
   }
   .hotel-info__wrap {
     width: 100%;
@@ -757,15 +725,19 @@ template {
   }
   .hotel-info__stars {
     position: absolute;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    right: 0;
+    right: 32px;
     top: 5px;
   }
   .hotel-info__name {
     margin-top: 10px;
+    width: 100%;
+  }
+  .hotel-info__description {
+    padding-right: 30px;
   }
   .hotel-rating {
     display: none;
@@ -774,7 +746,7 @@ template {
     -webkit-box-ordinal-group: -2;
         -ms-flex-order: -3;
             order: -3;
-    margin-left: 0px;
+    margin-left: 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
