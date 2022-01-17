@@ -533,7 +533,7 @@ template {
   padding-top: 16px;
 }
 
-.hotel__wrap {
+.hotel-top__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,6 +543,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__stars {
@@ -625,6 +626,80 @@ template {
 
 .span-wrap {
   font-size: 10px;
+}
+
+.hotel {
+  padding-bottom: 70px;
+}
+
+.hotel-bottom {
+  width: 100%;
+}
+
+.hotel-bottom__wrap {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-bottom__left {
+  max-width: 728px;
+  margin-left: 2px;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.swiper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-button {
+  position: absolute;
+  z-index: 20;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  cursor: pointer;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+.slider-button-prev {
+  background-image: url(../img/prev.svg);
+  left: 16px;
+}
+
+.slider-button-next {
+  background-image: url(../img/next.svg);
+  right: 18px;
 }
 
 @media (max-width: 1200px) {
