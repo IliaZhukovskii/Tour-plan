@@ -4,6 +4,23 @@
   .search
     margin: 0 auto
 
+  .hotel-bottom
+    &__left
+      width: 55%
+      margin-right: 30px
+    &__right
+      width: 40%
+
+  .swiper-slide__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+  .map__wrap
+    width: 100%
+
+  .booking-button__view
+    width: 100%
+
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -24,8 +41,35 @@
     margin-top: 1px
   .user
     margin-top: 5px
+  .hotel-rating
+    padding: 8px 6px 6px 7px
+    margin-top: 8px
+  .hotel-bottom
+    &__wrap
+      flex-direction: column
+    &__left
+      width: 700px
+      height: 450px
+      margin-bottom: 30px
+      margin-left: 0
+    &__right
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      height: 210px
+      width: 100%
+  .swiper
+    width: 100%
+  .hotel
+    &__booking
+      width: 340px
+  .booking__wrap
+    padding: 29px 22px 26px 23px
+  .map__wrap
+    width: 340px
+    height: 210px
 
-@media (max-width:767px)
+@media (max-width:760px)
   .container
     max-width: 576px
     width: 92%
@@ -58,10 +102,11 @@
   .breadcrumb__wrap
     margin-top: 2px
     padding-bottom: 17px
-
   .hotel
     padding-top: 0
-    &__wrap
+    &-top
+      &__wrap
+        margin-bottom: 18px
     &-info
       width: 100%
       &__wrap
@@ -84,3 +129,38 @@
   .offer
     order: -3
     margin-left: 1px
+
+  .swipe
+    width: 100%
+  .hotel-bottom
+    &__left
+      width: 100%
+      height: 180px
+      margin-bottom: 0
+    &__right
+      flex-direction: column
+      width: 100%
+  .slider-button
+    +size(8px,14px)
+    &-prev
+      left: 11px
+    &-next
+      right: 11px
+  .hotel
+    &__booking
+      width: 100%
+      margin-top: -40px
+      margin-bottom: 20px
+  .booking
+    &-button
+      &__view
+        display: block
+    &__wrap
+      padding: 29px 21px 26px 22px
+
+  .map
+    width: 100%
+    padding-bottom: 200px
+    &__wrap
+      width: 100%
+      height: 173px
