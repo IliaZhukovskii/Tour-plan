@@ -16,6 +16,7 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
+  padding-bottom: 1000px;
 }
 
 img {
@@ -845,7 +846,6 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 1000px;
 }
 
 .newsletter::before {
@@ -1143,6 +1143,7 @@ input[type~="text"] {
   }
   .hotel-bottom__wrap {
     width: 279px;
+    margin: 0 auto;
   }
   .hotel-bottom__left {
     width: 100%;
@@ -1175,7 +1176,6 @@ input[type~="text"] {
     width: 100%;
     margin-top: -41px;
     margin-bottom: 20px;
-    margin-left: 1px;
   }
   .booking-number__phone {
     padding-right: 4px;
