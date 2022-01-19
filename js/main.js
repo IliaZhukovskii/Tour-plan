@@ -13,20 +13,3 @@ const swiper = new Swiper('.swiper', {
   }
 
 });
-
-
-const swiperComment = new Comment('.comment-slider', {
-
-  loop: true,
-
-   keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-
-  navigation: {
-    nextEl: '.slider-button__prev',
-    prevEl: '.slider-button__next',
-  }
-
-});
