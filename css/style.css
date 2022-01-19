@@ -965,7 +965,8 @@ input[type~="text"] {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .newsletter__container {
     max-width: 700px;
   }
   .header-top {
@@ -1033,6 +1034,12 @@ input[type~="text"] {
   .map__wrap {
     width: 340px;
     height: 210px;
+  }
+  .newsletter {
+    margin-top: 230px;
+  }
+  .newsletter__container {
+    padding: 92px 0 87px 0;
   }
 }
 
@@ -1165,6 +1172,49 @@ input[type~="text"] {
   .map__wrap {
     width: 100%;
     height: 173px;
+  }
+  .newsletter {
+    margin-top: 122px;
+    margin-bottom: 300px;
+  }
+  .newsletter__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 576px;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    width: 92%;
+    margin: 0 auto;
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-subscribe {
+    margin-bottom: 37px;
+  }
+  .newsletter-subscribe__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+  }
+  .newsletter-subscribe__subtitle {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter-form {
+    width: 100%;
+    width: 280px;
+  }
+  .newsletter-form__search {
+    width: 100%;
+    height: 55px;
+  }
+  .btn {
+    display: block;
+  }
+  .input {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
