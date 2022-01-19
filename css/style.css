@@ -842,10 +842,10 @@ template {
 
 .newsletter {
   position: relative;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 1000px;
 }
 
 .newsletter::before {
@@ -936,7 +936,6 @@ input[type~="text"] {
   font-size: 12px;
   line-height: 15px;
   padding: 5px 5px;
-  max-width: 20%;
 }
 
 @media (max-width: 1200px) {
@@ -967,7 +966,7 @@ input[type~="text"] {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .container,
   .newsletter__container {
     max-width: 700px;
@@ -1039,17 +1038,24 @@ input[type~="text"] {
     height: 210px;
   }
   .newsletter {
+    width: 100%;
     margin-top: 230px;
   }
   .newsletter__container {
     padding: 92px 0 87px 0;
   }
+  .newsletter-subscribe {
+    margin-left: 6px;
+  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 88%;
+  }
+  .header {
+    margin-top: -10px;
   }
   .header__logo {
     width: 99px;
@@ -1073,7 +1079,7 @@ input[type~="text"] {
     height: 13px;
     border: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 8px;
     margin-top: 4px;
   }
   .header-menu {
@@ -1113,7 +1119,7 @@ input[type~="text"] {
         flex-basis: 30%;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    right: 32px;
+    right: 20px;
     top: 5px;
   }
   .hotel-info__name {
@@ -1135,10 +1141,14 @@ input[type~="text"] {
   .swipe {
     width: 100%;
   }
+  .hotel-bottom__wrap {
+    width: 279px;
+  }
   .hotel-bottom__left {
     width: 100%;
     height: 180px;
     margin-bottom: 0;
+    margin: 0 auto;
   }
   .hotel-bottom__right {
     -webkit-box-orient: vertical;
@@ -1148,19 +1158,27 @@ input[type~="text"] {
     width: 100%;
   }
   .slider-button {
-    width: 8px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .slider-button-prev {
-    left: 11px;
+    background-image: url(../img/prev-small.svg);
+    left: 6px;
   }
   .slider-button-next {
-    right: 11px;
+    background-image: url(../img/next-small.svg);
+    right: 6px;
   }
   .hotel__booking {
     width: 100%;
-    margin-top: -40px;
+    margin-top: -41px;
     margin-bottom: 20px;
+    margin-left: 1px;
+  }
+  .booking-number__phone {
+    padding-right: 4px;
   }
   .booking-button__view {
     display: block;
@@ -1208,6 +1226,7 @@ input[type~="text"] {
   .newsletter-form {
     width: 100%;
     width: 280px;
+    margin-left: 6px;
   }
   .newsletter-form__search {
     width: 100%;
@@ -1215,6 +1234,7 @@ input[type~="text"] {
   }
   .btn {
     display: block;
+    width: 65px;
   }
   .input {
     padding-left: 20px;
