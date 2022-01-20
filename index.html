@@ -8,6 +8,7 @@
      <title>Best tour plan</title>
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
      </script>
      <style>
@@ -181,38 +182,69 @@
                <div class="comment__wrap">
                     <h2 class="comment-title">What people think about us</h2>
                     <div class="comment-slider">
-                         <div class="comment-slider__wrap">
-                              <div class="slide">
-                                   <div class="slide__wrap">
-                                        <div class="slide__clear"></div>
-                                        <div class="slide__content">
-                                             <img src="img/comment-avatar.jpg" alt="avatar" class="comment-useravatar">
-                                             <div class="comment-username">Megan Fox</div>
-                                             <div class="comment-date">Stayed 18 Nov, 2019</div>
-                                             <div class="comment-rating">
-                                                  <img src="img/star.svg" alt="star" class="star">
-                                                  <img src="img/star.svg" alt="star" class="star">
-                                                  <img src="img/star.svg" alt="star" class="star">
-                                                  <img src="img/star.svg" alt="star" class="star">
-                                                  <img src="img/star.svg" alt="star" class="star">
-                                             </div>
-                                             <div class="comment-text">It was very nice hotel with cleanliness. Staff
-                                                  behavior was good and polite. They welcome us very well. Issue was
-                                                  only that Lift was not in working and we were allotted to 3rd floor
-                                                  and amenities articles were in corner of gallery which were giving bad
-                                                  feeling. Breakfast was good and support of the staff was also very
-                                                  nice. Location is not good as per atmosphere, it is very nearby most
-                                                  of the popular places but self location in a narrow street is not
-                                                  good. Overall it was a good experience and could recommend. </div>
-                                        </div>
+                         <div class="comment-slider__item">
+                              <div class="slide__profile">
+                                   <img src="img/comment-avatar.jpg" alt="avatar" class="comment-useravatar">
+                                   <div class="comment-username">Megan Fox</div>
+                                   <div class="comment-date">Stayed 18 Nov, 2019</div>
+                                   <div class="comment-rating">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
                                    </div>
                               </div>
 
+                              <div class="comment-text">It was very nice hotel with cleanliness. Staff
+                                   behavior was good and polite. They welcome us very well. Issue was
+                                   only that Lift was not in working and we were allotted to 3rd floor
+                                   and amenities articles were in corner of gallery which were giving bad
+                                   feeling. Breakfast was good and support of the staff was also very
+                                   nice. Location is not good as per atmosphere, it is very nearby most
+                                   of the popular places but self location in a narrow street is not
+                                   good. Overall it was a good experience and could recommend. </div>
                          </div>
+                         <div class="comment-slider__item">
+                              <div class="slide__profile">
+                                   <img src="img/comment-avatar-2.jpg" alt="avatar" class="comment-useravatar">
+                                   <div class="comment-username">Alonzo Ross</div>
+                                   <div class="comment-date">Stayed 2 Jan, 2018</div>
+                                   <div class="comment-rating">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                   </div>
+                              </div>
 
-                         <div class="slider-btn slider-button__prev"></div>
-                         <div class="slider-btn slider-button__next"></div>
+                              <div class="comment-text">It was very nice hotel with cleanliness. Staff
+                                   behavior was good and polite. They welcome us very well. Issue was
+                                   only that Lift was not in working and we were allotted to 3rd floor
+                                   and amenities articles were in corner of gallery which were giving bad
+                                   feeling. Breakfast was good and support of the staff was also very
+                                   nice.</div>
+                         </div>
+                         <div class="comment-slider__item">
+                              <div class="slide__profile">
+                                   <img src="img/comment-avatar-3.jpg" alt="avatar" class="comment-useravatar">
+                                   <div class="comment-username">Roxy</div>
+                                   <div class="comment-date">Stayed 20 Nov, 2017</div>
+                                   <div class="comment-rating">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                        <img src="img/star.svg" alt="star" class="star">
+                                   </div>
+                              </div>
 
+                              <div class="comment-text">Lift was not in working and we were allotted to 3rd floor
+                                   and amenities articles were in corner of gallery which were giving bad
+                                   feeling. Breakfast was good and support of the staff was also very
+                                   nice. Location is not good as per atmosphere, it is very nearby most
+                                   of the popular places but self location in a narrow street is not
+                                   good. Overall it was a good experience and could recommend. </div>
+                         </div>
                     </div>
                </div>
           </div>
@@ -227,9 +259,11 @@
 
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script src="js/parallax.js"></script>
      <script src="js/swiper-bundle.min.js"></script>
-     <script src="js/main.js"></script>
+     <script src="js/hotel-slider.js"></script>
+     <script src="js/comment-slider.js"></script>
      <script src="js/newsletter.js"></script>
      <script src="js/map.js"></script>
 </body>
