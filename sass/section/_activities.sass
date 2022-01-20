@@ -13,13 +13,36 @@
     width: 100%
     display: flex
     justify-content: space-between
+    padding-top: 1px
   &-item
+    position: relative
     width: 255px
     height: 255px
     border-radius: 6px
     color: $white
     font-style: normal
     padding-left: 26px
+    overflow: hidden
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: -1
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+      border-radius: 6px
+    &__img
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: -2
+      object-fit: cover
     &__text
       font-weight: bold
       font-size: 16px
@@ -33,24 +56,13 @@
       line-height: 16px
       border: none
       background-color: $button-color
-      padding: 7px 22px
+      padding: 7px 20px 7px 22px
       color: $white
       border-radius: 4px
       cursor: pointer
-
-.item-1
-  background-image: url(../img/item-1.png)
-  object-fit: cover
-.item-2
-  background-image: url(../img/item-2.png)
-  object-fit: cover
 .item-3
-  background-image: url(../img/item-3.png)
-  object-fit: cover
   &__text
     width: 170px
 .item-4
-  background-image: url(../img/item-4.png)
-  object-fit: cover
   &__text
     width: 200px

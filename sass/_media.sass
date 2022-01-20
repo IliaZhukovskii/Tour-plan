@@ -21,6 +21,10 @@
   .booking-button__view
     width: 100%
 
+  .slick-prev
+    left: -80px
+  .slick-next
+    right: -100px
 @media (max-width: 992px)
   .container,
   .newsletter__container
@@ -74,11 +78,75 @@
     width: 100%
     margin-top: 230px
     &__container
-      padding: 92px 0 87px 0
-    &-subscribe
-      margin-left: 6px
+      padding: 92px 0 93px 0
 
-@media (max-width:768px)
+  .comment
+    margin-bottom: 118px
+    &-slider
+      width: 579px
+      &__item
+        &::after,
+        &::before
+          display: none
+    &-title
+      padding: 40px 0 48px 0
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+    &-useravatar
+      margin-top: -43px
+      margin-left: 2px
+    &-username
+      margin-bottom: 10px
+      margin-left: 3px
+    &-date
+      margin-bottom: 4px
+      margin-left: 3px
+    &-rating
+      margin-bottom: 32px
+      margin-left: 3px
+    &-text
+      width: 460px
+      padding-left: 4px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+
+  .slick-arrow
+    top: 47%
+  .slick-prev
+    left: -50px
+  .slick-next
+    right: -70px
+
+  .activities
+    &-title
+      margin-bottom: 57px
+    &__wrap
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+    &-item
+      width: 339px
+      height: 255px
+      padding-left: 26px
+      margin-bottom: 20px
+      &__text
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        padding-top: 143px
+        width: 160px
+        margin-bottom: 18px
+  .item-3
+    &__text
+      width: 170px
+  .item-4
+    &__text
+      width: 200px
+@media (max-width:760px)
   .container
     max-width: 576px
     width: 88%
@@ -188,7 +256,7 @@
 
   .newsletter
     margin-top: 122px
-    margin-bottom: 300px
+    margin-bottom: 0px
     &__container
       flex-direction: column
       max-width: 576px
@@ -198,6 +266,7 @@
       padding: 76px 0 83px 0
     &-subscribe
       margin-bottom: 37px
+      padding-left: 4px
       &__title
         font-size: 20px
         line-height: 25px
@@ -218,3 +287,56 @@
     width: 65px
   .input
     padding-left: 20px
+
+  .comment
+    margin-bottom: 95px
+    &-slider
+      width: 281px
+    &-title
+      padding: 40px 2px 40px 0
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      width: 220px
+    &-useravatar
+      margin-top: -43px
+      margin-left: -6px
+    &-username
+      margin-bottom: 10px
+      margin-left: 0px
+    &-date
+      margin-bottom: 4px
+      margin-left: -1px
+    &-rating
+      margin-bottom: 32px
+      margin-left: 3px
+    &-text
+      width: 230px
+      padding-right: 10px
+      line-height: 19px
+
+  .slick-arrow
+    top: 8%
+  .slick-prev
+    left: 42px
+  .slick-next
+    right: 28px
+
+  .activities
+    &-title
+      margin-bottom: 35px
+      font-size: 18px
+      line-height: 23px
+    &__wrap
+      width: 100%
+      display: flex
+      flex-direction: column
+    &-item
+      width: 281px
+      height: 255px
+      padding-left: 26px
+      margin-bottom: 20px
+      &__button
+        display: block
+  .item-2
+    margin-bottom: 28px
