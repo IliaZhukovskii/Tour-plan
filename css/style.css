@@ -1308,7 +1308,7 @@ input[type~="text"] {
     margin-bottom: 118px;
   }
   .comment-slider {
-    width: 579px;
+    max-width: 579px;
   }
   .comment-slider__item::after, .comment-slider__item::before {
     display: none;
@@ -1475,11 +1475,11 @@ input[type~="text"] {
             order: -3;
     margin-left: 1px;
   }
-  .swipe {
+  .swiper {
     width: 100%;
   }
   .hotel-bottom__wrap {
-    width: 279px;
+    min-width: 279px;
     margin: 0 auto;
   }
   .hotel-bottom__left {
@@ -1487,13 +1487,14 @@ input[type~="text"] {
     height: 180px;
     margin-bottom: 0;
     margin: 0 auto;
+    padding-right: 2px;
   }
   .hotel-bottom__right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 99%;
   }
   .slider-button {
     width: 12px;
@@ -1513,6 +1514,7 @@ input[type~="text"] {
     width: 100%;
     margin-top: -41px;
     margin-bottom: 20px;
+    margin-left: 1px;
   }
   .booking-number__phone {
     padding-right: 4px;
@@ -1534,6 +1536,17 @@ input[type~="text"] {
   .newsletter {
     margin-top: 122px;
     margin-bottom: 0px;
+  }
+  .newsletter::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(10, 34, 61, 0.8);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
   }
   .newsletter__container {
     -webkit-box-orient: vertical;
@@ -1580,8 +1593,14 @@ input[type~="text"] {
   .comment {
     margin-bottom: 95px;
   }
+  .comment__wrap {
+    max-width: 576px;
+  }
   .comment-slider {
-    width: 281px;
+    width: 100%;
+  }
+  .comment-slider__item {
+    width: 100%;
   }
   .comment-title {
     padding: 40px 2px 40px 0;
@@ -1607,12 +1626,13 @@ input[type~="text"] {
     margin-left: 3px;
   }
   .comment-text {
-    width: 230px;
-    padding-right: 10px;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 30px;
     line-height: 19px;
   }
   .slick-arrow {
-    top: 8%;
+    top: 38px;
   }
   .slick-prev {
     left: 42px;
@@ -1636,6 +1656,7 @@ input[type~="text"] {
             flex-direction: column;
   }
   .activities-item {
+    margin: 0 auto;
     width: 281px;
     height: 255px;
     padding-left: 26px;
