@@ -1195,7 +1195,7 @@ input[type~="text"] {
 .footer {
   background-color: #0A223D;
   padding-top: 108px;
-  padding-bottom: 46px;
+  padding-bottom: 40px;
   color: #ffffff;
 }
 
@@ -1204,8 +1204,8 @@ input[type~="text"] {
   display: grid;
   -ms-grid-columns: 285px 285px 345px 230px;
       grid-template-columns: 285px 285px 345px 230px;
-  -ms-grid-rows: 172px 90px 380px 90px;
-      grid-template-rows: 172px 90px 380px 90px;
+  -ms-grid-rows: 172px 90px 400px 90px;
+      grid-template-rows: 172px 90px 400px 90px;
 }
 
 .footer__title {
@@ -1228,7 +1228,6 @@ input[type~="text"] {
 .footer__title--form {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 22px;
 }
 
 .footer__list {
@@ -1336,7 +1335,9 @@ input[type~="text"] {
 
 .footer-form {
   width: 539px;
-  margin-top: 45px;
+  height: 320px;
+  -ms-flex-item-align: start;
+      align-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1351,6 +1352,7 @@ input[type~="text"] {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / 5;
+  margin-top: 50px;
 }
 
 .footer__input {
@@ -1364,7 +1366,8 @@ input[type~="text"] {
   line-height: 15px;
   padding: 0 23px;
   outline: none;
-  margin-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 15px;
 }
 
 .footer__textarea {
@@ -1406,6 +1409,12 @@ input[type~="text"] {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
+  padding-top: 70px;
+  padding-right: 36px;
+}
+
+.footer-bottom__icons {
+  margin-top: -8px;
 }
 
 .footer-bottom__list {
@@ -1415,7 +1424,7 @@ input[type~="text"] {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 278px;
+  margin-right: 265px;
 }
 
 .footer-bottom__item {
