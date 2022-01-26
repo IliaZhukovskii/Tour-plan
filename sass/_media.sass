@@ -25,6 +25,10 @@
     left: -80px
   .slick-next
     right: -100px
+
+  .footer
+    &__input
+      width: 100%
 @media (max-width: 992px)
   .container,
   .newsletter__container
@@ -194,9 +198,11 @@
     &-form
       grid-row: 4 / 5
       grid-column: 1 / 9
-
       margin: 0
       padding: 0
+
+    &__input
+      width: 255px
     &-bottom
       grid-row: 5 / 6
       grid-column: 1 / 10
@@ -208,6 +214,9 @@
   .icon__wrap
     margin-right: 18px
     margin-left: 4px
+    &--location
+      margin-left: 8px
+      margin-right: 23px
     &--email
       margin-left: 6px
 
@@ -406,7 +415,7 @@
     right: 28px
 
   .activities
-    padding-bottom: 39px
+    padding-bottom: 40px
     &-title
       margin-bottom: 35px
       font-size: 18px
@@ -443,10 +452,10 @@
 
   .footer
     padding-top: 65px
-    padding-bottom: 29px
+    padding-bottom: 8px
     &__wrap
-      grid-template-columns: 1fr
-      grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 410px 65px
+      grid-template-columns: 100%
+      grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px
       align-content: start
     &-logo
       grid-row: 1
@@ -462,9 +471,14 @@
         margin-bottom: 20px
       &--contact
         margin-bottom: 23px
+      &--form
+        margin-bottom: 14px
     &__text
       &--contact
         margin-bottom: 20px
+      &--form
+        flex-basis: 100%
+        margin-bottom: 15px
     &__item
       line-height: 156%
     &-social
@@ -494,9 +508,9 @@
     &-contact
       grid-row: 6
       grid-column: 1
-      max-width: 80%
+      max-width: 100%
       margin: 30px 0 0 0
-      padding: 0 30px 0 0
+      padding: 0
       align-content: start
       &__item
         margin-bottom: 21px
@@ -506,16 +520,36 @@
     &-form
       grid-row: 7
       grid-column: 1
-      max-width: 80%
-      margin: 0
-      padding: 0 20px 0 0
+      margin-top: 35px
+      max-width: 100%
+      padding: 0 2px 0 0
+      align-content: start
+    &__input
+      flex-basis: 100%
+      max-width: 100%
+      margin: 0 0 15px 0
+    &__textarea
+      max-width: 100%
+      margin-bottom: 15px
+    &__button
+      display: block
+      order: 1
     &-bottom
+      max-width: 100%
       grid-row: 8
       grid-column: 1
-      margin: 0
+      margin: 10px 0 0 0
       padding: 0
       flex-direction: column
+      align-content: start
       &__list
+        flex-basis: 100%
+        justify-content: space-between
+        margin-right: 0
+        margin-bottom: 10px
+      &__item
+        margin-right: 5px
+      &__icons
         margin: 0
 
   .icon__wrap
@@ -523,6 +557,7 @@
     margin-top: 5px
     &--location
       margin-right: 12px
+      margin-left: 4px
     &--phone
       width: 50px
       margin-left: 0

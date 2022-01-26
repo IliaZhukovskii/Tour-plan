@@ -16,7 +16,6 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
-  padding-bottom: 1000px;
 }
 
 img {
@@ -1403,6 +1402,7 @@ input[type~="text"] {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -1445,16 +1445,18 @@ input[type~="text"] {
 }
 
 .icon__wrap--location {
-  margin-top: 1px;
-  margin-left: 2px;
+  margin-top: 3px;
+  margin-left: 7px;
+  margin-right: 22px;
 }
 
 .icon__wrap--phone {
-  margin-top: 2px;
+  margin-top: 4px;
   margin-left: 2px;
 }
 
 .icon__wrap--email {
+  margin-top: 4px;
   margin-left: 4px;
 }
 
@@ -1495,6 +1497,9 @@ input[type~="text"] {
   }
   .slick-next {
     right: -100px;
+  }
+  .footer__input {
+    width: 100%;
   }
 }
 
@@ -1749,6 +1754,9 @@ input[type~="text"] {
     margin: 0;
     padding: 0;
   }
+  .footer__input {
+    width: 255px;
+  }
   .footer-bottom {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
@@ -1765,6 +1773,10 @@ input[type~="text"] {
   .icon__wrap {
     margin-right: 18px;
     margin-left: 4px;
+  }
+  .icon__wrap--location {
+    margin-left: 8px;
+    margin-right: 23px;
   }
   .icon__wrap--email {
     margin-left: 6px;
@@ -2026,7 +2038,7 @@ input[type~="text"] {
     right: 28px;
   }
   .activities {
-    padding-bottom: 39px;
+    padding-bottom: 40px;
   }
   .activities-title {
     margin-bottom: 35px;
@@ -2085,14 +2097,14 @@ input[type~="text"] {
   }
   .footer {
     padding-top: 65px;
-    padding-bottom: 29px;
+    padding-bottom: 8px;
   }
   .footer__wrap {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 410px 65px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) 410px 65px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 410px 65px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) 430px 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px;
     -ms-flex-line-pack: start;
         align-content: start;
   }
@@ -2117,8 +2129,16 @@ input[type~="text"] {
   .footer__title--contact {
     margin-bottom: 23px;
   }
+  .footer__title--form {
+    margin-bottom: 14px;
+  }
   .footer__text--contact {
     margin-bottom: 20px;
+  }
+  .footer__text--form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
   }
   .footer__item {
     line-height: 156%;
@@ -2166,9 +2186,9 @@ input[type~="text"] {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    max-width: 80%;
+    max-width: 100%;
     margin: 30px 0 0 0;
-    padding: 0 30px 0 0;
+    padding: 0;
     -ms-flex-line-pack: start;
         align-content: start;
   }
@@ -2184,23 +2204,56 @@ input[type~="text"] {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
-    max-width: 80%;
-    margin: 0;
-    padding: 0 20px 0 0;
+    margin-top: 35px;
+    max-width: 100%;
+    padding: 0 2px 0 0;
+    -ms-flex-line-pack: start;
+        align-content: start;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .footer__textarea {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .footer-bottom {
+    max-width: 100%;
     -ms-grid-row: 8;
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: start;
   }
   .footer-bottom__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer-bottom__item {
+    margin-right: 5px;
+  }
+  .footer-bottom__icons {
     margin: 0;
   }
   .icon__wrap {
@@ -2209,6 +2262,7 @@ input[type~="text"] {
   }
   .icon__wrap--location {
     margin-right: 12px;
+    margin-left: 4px;
   }
   .icon__wrap--phone {
     width: 50px;
