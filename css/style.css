@@ -499,6 +499,10 @@ template {
   line-height: 18px;
 }
 
+.header-menu__item--visible {
+  display: none;
+}
+
 .breadcrumb {
   margin: 0;
 }
@@ -1790,6 +1794,11 @@ input[type~="text"] {
   }
   .header {
     margin-top: -10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
   }
   .header__logo {
     width: 99px;
@@ -1819,8 +1828,100 @@ input[type~="text"] {
   .header-menu {
     display: none;
   }
-  button {
-    display: none;
+  .header-menu__visible {
+    margin-top: 2px;
+    display: block;
+    padding-bottom: 30px;
+  }
+  .header-menu__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-menu__item {
+    margin-bottom: 15px;
+  }
+  .header-menu__item--visible {
+    margin-top: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .user--visible {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .user__avatar--visible {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+  .user__name--visible {
+    text-align: center;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 27px;
+  }
+  .search--visible {
+    position: relative;
+    width: 245px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .search__input--visible {
+    width: 180px;
+    height: 100%;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    background-color: #F5FAFE;
+    padding: 0 20px;
+    outline: none;
+    z-index: 10;
+    color: #333;
+  }
+  .search__button--visible {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 65px;
+    height: 100%;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #EC1F46;
+    cursor: pointer;
   }
   .line {
     width: 16px;
@@ -1829,6 +1930,9 @@ input[type~="text"] {
   }
   .search, .user {
     display: none;
+  }
+  .breadcrumb {
+    margin-top: 67px;
   }
   .breadcrumb__wrap {
     margin-top: 2px;

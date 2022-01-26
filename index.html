@@ -9,8 +9,6 @@
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/swiper-bundle.min.css">
      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-     </script>
      <style>
           @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap');
      </style>
@@ -44,6 +42,19 @@
           <nav class="header-menu">
                <div class="container">
                     <ul class="header-menu__wrap">
+                         <li class="header-menu__item  header-menu__item--visible">
+                              <a href="" class="user--visible">
+                                   <img src="img/user-avatar.jpg" alt="Аватар" class="user__avatar--visible">
+                                   <div class="user__name--visible">Nathan</div>
+                              </a>
+                              <form action="#" class="search--visible">
+                                   <input type="text" class="search__input--visible" placeholder="Search Location">
+                                   <button class="search__button--visible">
+                                        <img src="img/search.svg" alt="Поиск">
+                                   </button>
+                              </form>
+                         </li>
+
                          <li class="header-menu__item">
                               <a href="#" class="header-menu__link">All Deals</a>
                          </li>
@@ -402,6 +413,7 @@
      <script src="js/hotel-slider.js"></script>
      <script src="js/comment-slider.js"></script>
      <script src="js/newsletter.js"></script>
+     <script src="js/menu.js"></script>
 </body>
 
 </html>
