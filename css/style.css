@@ -1470,6 +1470,10 @@ input[type~="text"] {
   color: #BDBDBD;
 }
 
+.block {
+  display: inline;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 92%;
@@ -1832,6 +1836,7 @@ input[type~="text"] {
     margin-top: 2px;
     display: block;
     padding-bottom: 30px;
+    height: 100vh;
   }
   .header-menu__wrap {
     -webkit-box-orient: vertical;
@@ -2371,13 +2376,16 @@ input[type~="text"] {
   .icon__wrap--phone {
     width: 50px;
     margin-left: 0;
-    margin-right: 2px;
+    margin-right: -4px;
     margin-top: 3px;
   }
   .icon__wrap--email {
     margin-left: 2px;
     margin-right: 3px;
     margin-top: 3px;
+  }
+  .block {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
