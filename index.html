@@ -381,14 +381,14 @@
                          </ul>
                     </div>
 
-                    <div class="footer-form">
+                    <form class="footer-form" action="send.php" method="post" onsubmit="send(event, 'send.php')">
                          <div class="footer__title footer__title--form">Send us a message</div>
-                         <input type="text" class="footer__input" placeholder="Your Full Name*">
-                         <input type="text" class="footer__input" placeholder="Phone Number*">
-                         <textarea class="footer__textarea" placeholder="Message"></textarea>
-                         <button class="footer__button">Send</button>
+                         <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
+                         <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
+                         <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
+                         <button class="footer__button" type="submit">Send</button>
                          <div class="footer__text footer__text--form">* Required Fields</div>
-                    </div>
+                    </form>
 
                     <div class="footer-bottom">
                          <ul class="footer-bottom__list">
