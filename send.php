@@ -9,7 +9,6 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -18,6 +17,7 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -35,7 +35,6 @@ try {
             'allow_self_signed' => true //Разрешение на самоподписанные сертификаты
         )
     );
-
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'iliazhukovskii@gmail.com'; // Логин на почте
@@ -45,34 +44,26 @@ try {
     $mail->setFrom('iliazhukovskii@gmail.com', 'Илья Жуковский'); // Адрес самой почты и имя отправителя
 
     // Получатель письма 
-    $mail->addAddress('ilia.zhukovskii.99@mail.ru'); // Ещё один, если нужен
+    $mail->addAddress('ilia.zhukovskii.99@mail.ru');
 
-    // Прикрипление файлов к письму
-if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-        $filename = $file['name'][$ct];
-        if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-            $rfile[] = "Файл $filename прикреплён";
-        } else {
-            $rfile[] = "Не удалось прикрепить файл $filename";
-        }
-    }   
-}
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;    
-
+  
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
-} catch (Exception $e) {
+
+
+} 
+
+catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
 
 // Отображение результата
 header('Location: thankyou.html');
