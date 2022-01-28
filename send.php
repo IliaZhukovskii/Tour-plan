@@ -36,12 +36,12 @@ try {
         )
     );
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'iliazhukovskii@gmail.com'; // Логин на почте
-    $mail->Password   = '95644d584'; // Пароль на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'ivvvvvvaan@mail.ru'; // Логин на почте
+    $mail->Password   = 'THyNALNuL9m9fx8YZgNx'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('iliazhukovskii@gmail.com', 'Илья Жуковский'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('ivvvvvvaan@mail.ru', 'Илья Иванов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма 
     $mail->addAddress('ilia.zhukovskii.99@mail.ru');
