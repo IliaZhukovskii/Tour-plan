@@ -97,13 +97,16 @@
     border-radius: 4px
     font-style: normal
     font-weight: normal
-    font-size: 12px
+    font-size: 14px
     line-height: 15px
     padding: 0 23px
     outline: none
     margin-top: 18px
     margin-bottom: 15px
     color: #333
+    &::placeholder
+      font-size: 12px
+      color: #BDBDBD
   &__textarea
     width: 359px
     height: 123px
@@ -112,10 +115,13 @@
     border: none
     flex-basis: 100%
     overflow: hidden
-    font-size: 12px
+    font-size: 14px
     color: #333
     padding: 18px 23px
     margin-bottom: 22px
+    &::placeholder
+      font-size: 12px
+      color: #BDBDBD
   &__button
     background-color: $button-color
     width: 160px

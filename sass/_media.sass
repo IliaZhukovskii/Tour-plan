@@ -220,6 +220,16 @@
     &--email
       margin-left: 6px
 
+  .modal
+    &-form
+      justify-content: center
+      flex-direction: column
+    &-input
+      &__message
+        min-height: 100px
+    &-button
+      margin-bottom: 20px
+
 @media (max-width:760px)
   .container
     max-width: 576px
@@ -638,3 +648,17 @@
       margin-top: 3px
   .block
     display: block
+
+  .modal
+    &-dialog
+      width: 90%
+      padding-left: 0px
+      padding-right: 0px
+    &-form
+      margin: 0 auto
+      max-width: 80%
+    &-input
+      &__message
+        min-height: 100px
+    &-button
+      margin-bottom: 20px
