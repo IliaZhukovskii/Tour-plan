@@ -1222,7 +1222,7 @@ input[placeholder~="text"] {
 .footer {
   background-color: #0A223D;
   padding-top: 108px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   color: #ffffff;
 }
 
@@ -1387,6 +1387,17 @@ input[placeholder~="text"] {
   grid-column: 3 / 5;
   margin-top: 50px;
   margin-left: 15px;
+  margin-right: -40px;
+}
+
+.footer-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .footer__input {
@@ -1692,6 +1703,10 @@ input[placeholder~="text"] {
   }
   .slick-next {
     right: -100px;
+  }
+  .footer-input {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__input-wrap {
     width: 100%;
@@ -2555,7 +2570,7 @@ input[placeholder~="text"] {
   .footer__textarea {
     max-width: 100%;
     margin-bottom: 15px;
-    margin-top: 0;
+    margin-top: 15px;
   }
   .footer__button {
     display: block;
