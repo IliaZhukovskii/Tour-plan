@@ -27,6 +27,11 @@ img {
   border-bottom: 1px solid red;
 }
 
+.wt-sky-long-dialog {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1487,7 +1492,7 @@ input[placeholder~="text"] {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .footer-bottom__icons {
@@ -2119,6 +2124,18 @@ input[placeholder~="text"] {
     z-index: 10;
     color: #333;
   }
+  .search__input--visible::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .search__input--visible:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .search__input--visible::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .search__input--visible::placeholder {
+    font-size: 12px;
+  }
   .search__button--visible {
     position: absolute;
     top: 0;
@@ -2414,9 +2431,9 @@ input[placeholder~="text"] {
   .footer__wrap {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 460px 80px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) 460px 80px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 460px 80px;
+    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) auto 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) auto 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) auto 80px;
     -ms-flex-line-pack: start;
         align-content: start;
   }
@@ -2513,24 +2530,35 @@ input[placeholder~="text"] {
   }
   .footer-form {
     -ms-grid-row: 7;
-    grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
     -ms-grid-column: 1;
     grid-column: 1;
     margin-top: 35px;
     max-width: 100%;
-    padding: 0 2px 0 0;
+    padding: 0 2px 10px 0;
     -ms-flex-line-pack: start;
         align-content: start;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .footer__input {
+    margin-top: 0;
   }
   .footer__input-wrap {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%;
-    margin: 0 0 0px 0;
+    margin: 0 0 15px 0;
+  }
+  .footer__input-wrap:last-child {
+    margin-bottom: 0;
   }
   .footer__textarea {
     max-width: 100%;
     margin-bottom: 15px;
+    margin-top: 0;
   }
   .footer__button {
     display: block;
