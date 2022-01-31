@@ -10,7 +10,7 @@ $(document).ready(function(){
         },
         phone: {
           required: "Enter phone number",
-          minlength: "Phone must be at least 7 letters",
+          minlength: "Phone must be at least 11 letters",
         },
         email: {
           required: "Your email address must be in the format of name@domain.com",
