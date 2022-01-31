@@ -28,7 +28,10 @@
 
   .footer
     &__input
-      width: 100%
+      &-wrap
+        width: 100%
+    &-form
+      padding-bottom: 40px
 @media (max-width: 992px)
   .container,
   .newsletter__container
@@ -200,9 +203,9 @@
       grid-column: 1 / 9
       margin: 0
       padding: 0
-
     &__input
-      width: 255px
+      &-wrap
+        width: 255px
     &-bottom
       grid-row: 5 / 6
       grid-column: 1 / 10
@@ -534,7 +537,7 @@
     padding-bottom: 8px
     &__wrap
       grid-template-columns: 100%
-      grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px
+      grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 460px 80px
       align-content: start
     &-logo
       grid-row: 1
@@ -604,9 +607,10 @@
       padding: 0 2px 0 0
       align-content: start
     &__input
-      flex-basis: 100%
-      max-width: 100%
-      margin: 0 0 15px 0
+      &-wrap
+        flex-basis: 100%
+        max-width: 100%
+        margin: 0 0 0px 0
     &__textarea
       max-width: 100%
       margin-bottom: 15px

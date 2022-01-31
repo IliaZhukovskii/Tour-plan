@@ -183,9 +183,10 @@
                     <span class="newsletter-subscribe__subtitle">Newsletter</span>
                </div>
                <div class="newsletter-form">
-                    <form action="#" class="newsletter-form__search">
-                         <input type="text" class="input" placeholder="Your email address">
-                         <button class="btn">
+                    <form action="#" class="newsletter-form__search form-validate">
+                         <input type="email" class="input" placeholder="Your email address" name="email" required
+                              minlength="5">
+                         <button class="btn" type="submit">
                               <div class="btn-text">Send</div>
                          </button>
                     </form>
@@ -381,10 +382,17 @@
                          </ul>
                     </div>
 
-                    <form class="footer-form" action="send.php" method="post" onsubmit="send(event, 'send.php')">
+                    <form class="footer-form form-validate" action="send.php" method="post"
+                         onsubmit="send(event, 'send.php')">
                          <div class="footer__title footer__title--form">Send us a message</div>
-                         <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
-                         <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
+                         <div class="footer__input-wrap">
+                              <input type="text" class="footer__input" placeholder="Your Full Name*" name="name"
+                                   required minlength="2">
+                         </div>
+                         <div class="footer__input-wrap">
+                              <input type="tel" class="footer__input number-mask" placeholder="Phone Number*"
+                                   name="phone" required minlength="7">
+                         </div>
                          <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
                          <button class="footer__button" type="submit">Send</button>
                          <div class="footer__text footer__text--form">* Required Fields</div>
@@ -413,10 +421,13 @@
                <div class="modal-close">
                     <img src="img/modal-close.svg" alt="close">
                </div>
-               <form action="#" class="modal-form">
-                    <input type="text" class="modal-input modal-input__name" placeholder="Your Full Name*">
-                    <input type="text" class="modal-input modal-input__number" placeholder="Phone Number*">
-                    <input type="text" class="modal-input modal-input__email" placeholder="Email*">
+               <form action="#" class="modal-form form-validate">
+                    <input type="text" class="modal-input modal-input__name" placeholder="Your Full Name*" name="name"
+                         required minlength="2">
+                    <input type="tel" class="modal-input modal-input__number number-mask" placeholder="Phone Number*"
+                         name="phone" required minlength="7">
+                    <input type="email" class="modal-input modal-input__email" placeholder="Email*" name="email"
+                         required minlength="7">
                     <textarea type="text" class="modal-input modal-input__message" placeholder="Message"></textarea>
                     <button class="modal-button">Send</button>
                     <div class="modal-text">* Required Fields</div>
@@ -434,10 +445,13 @@
      <script src="js/parallax.js"></script>
      <script src="js/swiper-bundle.min.js"></script>
      <script src="js/hotel-slider.js"></script>
+     <script src="js/modal-validate.js"></script>
+     <script src="js/jquery.mask.min.js"></script>
      <script src="js/comment-slider.js"></script>
      <script src="js/newsletter.js"></script>
      <script src="js/menu.js"></script>
      <script src="js/modal.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
 </body>
 
 </html>

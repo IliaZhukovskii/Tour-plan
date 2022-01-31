@@ -22,6 +22,11 @@ img {
   max-width: 100%;
 }
 
+.error {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1226,8 +1231,8 @@ input[placeholder~="text"] {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  -ms-grid-rows: 172px 90px 400px 90px;
-      grid-template-rows: 172px 90px 400px 90px;
+  -ms-grid-rows: 172px 90px 430px 90px;
+      grid-template-rows: 172px 90px 430px 90px;
 }
 
 .footer__title {
@@ -1383,7 +1388,7 @@ input[placeholder~="text"] {
 }
 
 .footer__input {
-  width: 255px;
+  width: 100%;
   height: 50px;
   border: none;
   border-radius: 4px;
@@ -1394,8 +1399,11 @@ input[placeholder~="text"] {
   padding: 0 23px;
   outline: none;
   margin-top: 18px;
-  margin-bottom: 15px;
   color: #333;
+}
+
+.footer__input-wrap {
+  width: 255px;
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -1419,6 +1427,7 @@ input[placeholder~="text"] {
 }
 
 .footer__textarea {
+  margin-top: 15px;
   width: 359px;
   height: 123px;
   border-radius: 4px;
@@ -1599,7 +1608,7 @@ input[placeholder~="text"] {
   border-radius: 4px;
   outline: none;
   border: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 0 23px;
 }
 
@@ -1640,6 +1649,7 @@ input[placeholder~="text"] {
   background-color: #EC1F46;
   border-radius: 4px;
   padding: 18px 65px;
+  margin-top: 15px;
 }
 
 .modal-text {
@@ -1681,8 +1691,11 @@ input[placeholder~="text"] {
   .slick-next {
     right: -100px;
   }
-  .footer__input {
+  .footer__input-wrap {
     width: 100%;
+  }
+  .footer-form {
+    padding-bottom: 40px;
   }
 }
 
@@ -1937,7 +1950,7 @@ input[placeholder~="text"] {
     margin: 0;
     padding: 0;
   }
-  .footer__input {
+  .footer__input-wrap {
     width: 255px;
   }
   .footer-bottom {
@@ -2401,9 +2414,9 @@ input[placeholder~="text"] {
   .footer__wrap {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) 430px 80px;
-        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 430px 80px;
+    -ms-grid-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 460px 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(-webkit-min-content, 380px) 460px 80px;
+        grid-template-rows: 120px 120px 140px 200px 260px minmax(min-content, 380px) 460px 80px;
     -ms-flex-line-pack: start;
         align-content: start;
   }
@@ -2509,11 +2522,11 @@ input[placeholder~="text"] {
     -ms-flex-line-pack: start;
         align-content: start;
   }
-  .footer__input {
+  .footer__input-wrap {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%;
-    margin: 0 0 15px 0;
+    margin: 0 0 0px 0;
   }
   .footer__textarea {
     max-width: 100%;
