@@ -7,6 +7,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Best tour plan</title>
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/aos.css">
      <link rel="stylesheet" href="css/swiper-bundle.min.css">
      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
      <style>
@@ -18,7 +19,8 @@
      <div class="header">
           <div class="container">
                <div class="header-top">
-                    <a href="" class="header__logo">
+                    <a href="" class="header__logo" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                         data-aos-duration="1500">
                          <img src="img/header-logo.svg" alt="logo">
                     </a>
                     <form action="#" class="search">
@@ -109,7 +111,7 @@
                          <div class="hotel-info__description">Half-Board / All Inclusive + Complimentary Activities
                               + Child Stays Free</div>
                     </div>
-                    <div class="hotel-rating">
+                    <div class="hotel-rating" data-aos="fade-left">
                          <div class="hotel-rating__text">User Rattings</div>
                          <div class="hotel-rating__rating">4.5/<span class="span-wrap">5</span></div>
                     </div>
@@ -182,7 +184,7 @@
                     <h2 class="newsletter-subscribe__title">subscribe to our</h2>
                     <span class="newsletter-subscribe__subtitle">Newsletter</span>
                </div>
-               <div class="newsletter-form">
+               <div class="newsletter-form" data-aos="flip-down" data-aos-delay="500">
                     <form action="#" class="newsletter-form__search form-validate">
                          <input type="email" class="input" placeholder="Your email address" name="email" required
                               minlength="5">
@@ -271,21 +273,21 @@
           <div class="container">
                <h3 class="activities-title">Other Activities</h3>
                <div class="activities__wrap">
-                    <div class="activities-item item-1">
+                    <div class="activities-item item-1" data-aos="flip-right" data-aos-delay="100">
                          <img src="img/item-1.png" class="activities-item__img" alt="The curious corner
                               of chamarel">
                          <div class="activities-item__text">The curious corner
                               of chamarel</div>
                          <button class="activities-item__button">Book Now</button>
                     </div>
-                    <div class="activities-item item-2">
+                    <div class="activities-item item-2" data-aos="flip-right" data-aos-delay="200">
                          <img src="img/item-2.png" class="activities-item__img" alt="Gymkhana club golf
                               course">
                          <div class="activities-item__text">Gymkhana club golf
                               course</div>
                          <button class="activities-item__button">Book Now</button>
                     </div>
-                    <div class="activities-item item-3">
+                    <div class="activities-item item-3" data-aos="flip-right" data-aos-delay="300">
                          <img src="img/item-3.png" class="activities-item__img" alt="Tamarind falls hiking
                               trip - full day">
                          <div class="activities-item__text item-3__text">Tamarind falls hiking
@@ -293,7 +295,7 @@
                          </div>
                          <button class="activities-item__button">Book Now</button>
                     </div>
-                    <div class="activities-item item-4">
+                    <div class="activities-item item-4" data-aos="flip-right" data-aos-delay="400">
                          <img src="img/item-4.png" class="activities-item__img" alt="The blue marine discovery
                               quest">
                          <div class="activities-item__text item-4__text">The blue marine discovery
@@ -336,9 +338,12 @@
                     </div>
                     <div class="footer-social">
                          <div class="footer__title footer__title--social">Social Network</div>
-                         <a href="#"><img src="img/fb.svg" alt="facebook" class="footer-social__icon"></a>
-                         <a href="#"><img src="img/yt.svg" alt="ytube" class="footer-social__icon"></a>
-                         <a href="#"><img src="img/inst.svg" alt="instagram" class="footer-social__icon"></a>
+                         <a href="#"><img src="img/fb.svg" alt="facebook" class="footer-social__icon"
+                                   data-aos="fade-left" data-aos-delay="100"></a>
+                         <a href="#"><img src="img/yt.svg" alt="ytube" class="footer-social__icon" data-aos="fade-left"
+                                   data-aos-delay="200"></a>
+                         <a href="#"><img src="img/inst.svg" alt="instagram" class="footer-social__icon"
+                                   data-aos="fade-left" data-aos-delay="300"></a>
                     </div>
                     <div class="footer-legal">
                          <div class="footer__title">LEGAL INFORMATION</div>
@@ -355,12 +360,13 @@
                               our
                               contact form</div>
                          <ul class="footer__list">
-                              <li class="footer-contact__item">
+                              <li class="footer-contact__item" data-aos="fade-up" data-aos-delay="100">
                                    <div class="icon__wrap icon__wrap--location "><img src="img/footer-location.svg"
                                              alt="location"></div>
                                    9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                               </li>
-                              <li class="footer-contact__item footer-contact__item--phone">
+                              <li class="footer-contact__item footer-contact__item--phone" data-aos="fade-up"
+                                   data-aos-delay="200">
                                    <div class="icon__wrap icon__wrap--phone"><img src="img/footer-phone.svg"
                                              alt="phone"></div>
                                    <div class="contact__text">
@@ -373,7 +379,8 @@
 
 
                               </li>
-                              <li class="footer-contact__item footer-contact__item--email">
+                              <li class="footer-contact__item footer-contact__item--email" data-aos="fade-up"
+                                   data-aos-delay="300">
                                    <div class="icon__wrap icon__wrap--email"><img src="img/footer-email.svg"
                                              alt="email"></div>
                                    cherly.lawson@example.com
@@ -447,6 +454,7 @@
      <script src="js/hotel-slider.js"></script>
      <script src="js/modal-validate.js"></script>
      <script src="js/jquery.mask.min.js"></script>
+     <script src="js/aos.js"></script>
      <script src="js/comment-slider.js"></script>
      <script src="js/newsletter.js"></script>
      <script src="js/menu.js"></script>
