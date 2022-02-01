@@ -1721,6 +1721,7 @@ input[placeholder~="text"] {
     width: 100%;
   }
   .footer-form {
+    margin-right: 0;
     padding-bottom: 40px;
   }
 }
