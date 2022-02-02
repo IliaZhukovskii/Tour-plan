@@ -26,6 +26,10 @@
   .slick-next
     right: -100px
 
+  .activities
+    &-item:not(:last-child)
+      margin-right: 10px
+
   .footer
     &-input
       flex-wrap: wrap
@@ -144,6 +148,8 @@
       height: 255px
       padding-left: 26px
       margin-bottom: 20px
+    &-item:not(:last-child)
+      margin-right: 0px
       &__text
         font-weight: bold
         font-size: 16px
@@ -235,6 +241,10 @@
         min-height: 100px
     &-button
       margin-bottom: 20px
+
+  .modal
+    &-text
+      margin-top: 0
 
 @media (max-width:760px)
   .container
